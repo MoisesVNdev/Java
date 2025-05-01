@@ -1,6 +1,8 @@
+import java.util.logging.Logger;
+
 public class Variables {
     public static void variaveis(){
-
+        Logger logger = Logger.getLogger(Variables.class.getName());
 
         byte byteMinimo       = Byte.MIN_VALUE;   // declaração de byte com valor mínimo que pode armazenar (-128)
         byte byteMaximo       = Byte.MAX_VALUE;   // declaração de byte com valor máximo que pode armazenar (127)
@@ -29,29 +31,23 @@ public class Variables {
         boolean booleanMaximo = true;  // declaração de boolean com valor máximo (true)
 
         // exibição em formato de tabela:
-        System.out.println();
-        System.out.println("Tipo     | Tamanho (bits) | Valor Mínimo           | Valor Máximo");
-        System.out.println("--------------------------------------------------------------------------");
-        System.out.printf("%-8s | %-14d | %-23d | %-23d%n",
-                          "byte", Byte.SIZE, byteMinimo, byteMaximo);
-        System.out.printf("%-8s | %-14d | %-23d | %-23d%n",
-                          "short", Short.SIZE, shortMinimo, shortMaximo);
-        System.out.printf("%-8s | %-14d | %-23d | %-23d%n",
-                          "int", Integer.SIZE,intMinimo, intMaximo);
-        System.out.printf("%-8s | %-14d | %-23d | %-23d%n",
-                          "long", Long.SIZE, longMinimo, longMaximo);
-        System.out.printf("%-8s | %-14d | %-23.6e | %-23.6e%n",
-                          "float", Float.SIZE, floatMinimo, floatMaximo);
-        System.out.printf("%-8s | %-14d | %-23.6e | %-23.6e%n",
-                          "double", Double.SIZE, doubleMinimo, doubleMaximo);
+                StringBuilder sb = new StringBuilder();
+                String ANSI_GREEN = "\u001B[32m";
+                String formatacao_01 = "%-8s | %-14d | %-23d | %-23d%n";
+                String formataca0_02 = "%-8s | %-14d | %-23.6e | %-23.6e%n";
+        sb.append("\nTipo     | Tamanho (bits) | Valor Mínimo           | Valor Máximo\n")
+                .append("--------------------------------------------------------------------------\n")
+                .append(String.format(formatacao_01, "byte", Byte.SIZE, byteMinimo, byteMaximo))
+                .append(String.format(formatacao_01, "short", Short.SIZE, shortMinimo, shortMaximo))
+                .append(String.format(formatacao_01, "int", Integer.SIZE,intMinimo, intMaximo))
+                .append(String.format(formatacao_01,"long", Long.SIZE, longMinimo, longMaximo))
+                .append(String.format(formataca0_02,"float", Float.SIZE, floatMinimo, floatMaximo))
+                .append(String.format(formataca0_02,"double", Double.SIZE, doubleMinimo, doubleMaximo))
         //  char convertido para int para mostrar o codigo Unicode
-        System.out.printf("%-8s | %-14d | %-23d | %-23d%n",
-                          "char", Character.SIZE, (int)charMinimo, (int)charMaximo);
-        System.out.printf("%-8s | %-14s | %-23s | %-23s%n",
-                          "boolean","1", String.valueOf(booleanMinimo), String.valueOf(booleanMaximo));
-        // char em forma de letras:
-        System.out.println();
-        System.out.println("Exemplos de char: letras minúscula = " + letraMinuscula + " e maiúscula = " + letraMaiuscula);
+                .append(String.format(formatacao_01,"char", Character.SIZE, (int)charMinimo, (int)charMaximo))
+                .append(String.format("%-8s | %-14s | %-23s | %-23s%n","boolean","1", String.valueOf(booleanMinimo), String.valueOf(booleanMaximo)))
+                .append("\nExemplos de char: letras minúscula = ").append(letraMinuscula).append(" e maiúscula = ").append(letraMaiuscula);
+                logger.info(ANSI_GREEN + sb.toString());
 
         /*
          * Formatação com especificadores de formato para exibição em “tabela”:
