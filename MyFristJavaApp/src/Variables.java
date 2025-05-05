@@ -1,8 +1,10 @@
 import java.util.logging.Logger;
 
 public class Variables {
+    private static final Logger logger = Logger.getLogger(Variables.class.getName());
+
     public static void variaveis(){
-        Logger logger = Logger.getLogger(Variables.class.getName());
+
 
         byte byteMinimo       = -128;   // declaração de byte com valor mínimo que pode armazenar (-128)
         byte byteMaximo       = Byte.MAX_VALUE;   // declaração de byte com valor máximo que pode armazenar (127)
