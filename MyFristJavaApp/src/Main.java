@@ -12,8 +12,9 @@ public class Main {
             System.out.println("2 - Exibir as representações numericas do Java");
             System.out.println("3 - Calculadora de media de nota");
             System.out.println("4 - Conversor de temperatura");
+            System.out.println("5 - Dias do mês por Switch Expresions");
             System.out.println("0 - para encerra o programa");
-            System.out.print("Escolha ma das opções acima: ");
+            System.out.print("Escolha uma das opções acima: ");
             opcao = scanner.nextInt();
 
             switch (opcao){
@@ -30,6 +31,7 @@ public class Main {
                     ConversorTemperatura.menu();
                     break;
                 case 5:
+                    SwitchExpressions.menu();
                     break;
                 case 6:
                     break;
