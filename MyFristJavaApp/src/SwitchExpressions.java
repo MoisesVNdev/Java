@@ -18,7 +18,7 @@ public class SwitchExpressions {
             mes= scanner.nextInt();
         }while (mes!=0);
     }
-    public static int diasNoMes(int mes){
+    public static void diasNoMes(int mes){
         dias = switch (mes){
             case 1, 3, 5, 7, 8, 10, 12 -> 31;
             case 2 -> 28;
@@ -28,6 +28,6 @@ public class SwitchExpressions {
                 yield 0;
             }
         };
-        return dias;
+
     }
 }
