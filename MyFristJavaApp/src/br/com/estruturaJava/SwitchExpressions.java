@@ -1,3 +1,5 @@
+package br.com.estruturaJava;
+
 import java.util.Scanner;
 
 public class SwitchExpressions {

@@ -1,3 +1,6 @@
+import br.com.estruturaJava.*;
+import br.com.programacao.estruturada.*;
+
 import java.util.Scanner;
 
 public class Main {

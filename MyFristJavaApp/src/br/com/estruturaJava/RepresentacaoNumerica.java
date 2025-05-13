@@ -1,3 +1,5 @@
+package br.com.estruturaJava;
+
 import java.util.logging.Logger;
 
 public class RepresentacaoNumerica {

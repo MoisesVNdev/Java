@@ -1,3 +1,5 @@
+package br.com.programacao.estruturada;
+
 import java.util.Scanner;
 
 public class MediaNotasAluno {

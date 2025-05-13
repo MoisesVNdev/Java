@@ -1,6 +1,8 @@
+package br.com.programacao.estruturada;
+
 import java.util.Scanner;
 
-class ConversorTemperatura {
+public class ConversorTemperatura {
     private static Scanner scanner = new Scanner(System.in);
     public static void menu() {
         int opcao;
