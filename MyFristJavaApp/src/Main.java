@@ -1,4 +1,5 @@
 import br.com.estruturaJava.*;
+import br.com.programacao.POO.parte1.*;
 import br.com.programacao.estruturada.*;
 
 import java.util.Scanner;
@@ -17,6 +18,7 @@ public class Main {
             System.out.println("4 - Conversor de temperatura");
             System.out.println("5 - Dias do mês por Switch Expresions");
             System.out.println("6 - Rada de multa");
+            System.out.println("7 - Conta bancaria");
             System.out.println("0 - para encerra o programa");
             System.out.print("Escolha uma das opções acima: ");
             opcao = scanner.nextInt();
@@ -41,6 +43,7 @@ public class Main {
                     RadarDeMulta.menu();
                     break;
                 case 7:
+
                     break;
                 case 8:
                     break;
