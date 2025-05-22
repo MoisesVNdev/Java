@@ -1,4 +1,4 @@
-package br.com.programacao.POO.parte1;
+package br.com.programacao.poo.caixaeletronico;
 
 import java.util.Scanner;
 
