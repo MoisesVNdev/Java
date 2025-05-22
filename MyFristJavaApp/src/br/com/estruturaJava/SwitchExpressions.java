@@ -11,7 +11,7 @@ public class SwitchExpressions {
         {
             System.out.println("\nDigite um numero de 1 a 12 para saber quantos dias tem nesse mês!");
             System.out.print("Resposta: ");
-            diasNoMes(mes = scanner.nextInt());
+            diasNoMes(scanner.nextInt());
 
             System.out.println(dias + " Dias");
             System.out.println("\n1 - para tentar novamente ");
