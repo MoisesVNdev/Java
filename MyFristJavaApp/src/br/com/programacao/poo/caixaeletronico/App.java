@@ -1,4 +1,4 @@
-package br.com.programacao.POO.parte1;
+package br.com.programacao.poo.caixaeletronico;
 
 public class App {
     public static void main(String[] args) {
