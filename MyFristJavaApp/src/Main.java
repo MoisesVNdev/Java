@@ -1,6 +1,6 @@
 import br.com.estruturaJava.*;
-import br.com.programacao.POO.parte1.*;
 import br.com.programacao.estruturada.*;
+import br.com.programacao.poo.caixaeletronico.App;
 
 import java.util.Scanner;
 
@@ -12,13 +12,13 @@ public class Main {
         do{
             System.out.println("---------- Menu de opções -----------");
             System.out.println("Escolha uma das funções abaixo: \n");
-            System.out.println("1 - Exibir a tabela das variaveis primitivas do Java");
+            System.out.println("1 - Exibir a tabela das variates primitivas do Java");
             System.out.println("2 - Exibir as representações numericas do Java");
             System.out.println("3 - Calculadora de media de nota");
             System.out.println("4 - Conversor de temperatura");
-            System.out.println("5 - Dias do mês por Switch Expresions");
+            System.out.println("5 - Dias do mês por Switch Expressions");
             System.out.println("6 - Rada de multa");
-            System.out.println("7 - Conta bancaria");
+            System.out.println("7 - Caixa Eletrônico");
             System.out.println("0 - para encerra o programa");
             System.out.print("Escolha uma das opções acima: ");
             opcao = scanner.nextInt();
@@ -43,7 +43,7 @@ public class Main {
                     RadarDeMulta.menu();
                     break;
                 case 7:
-
+                    App.main(args);
                     break;
                 case 8:
                     break;
