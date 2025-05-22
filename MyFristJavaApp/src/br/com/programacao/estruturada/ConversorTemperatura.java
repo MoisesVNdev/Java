@@ -3,7 +3,7 @@ package br.com.programacao.estruturada;
 import java.util.Scanner;
 
 public class ConversorTemperatura {
-    private static Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
     public static void menu() {
         int opcao;
         do {
