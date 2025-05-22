@@ -1,20 +1,23 @@
 package br.com.programacao.poo.caixaeletronico;
 
 public class Conta {
-    private final int numero;
+    private final String numConta;
     private final String titular;
     private double saldo;
     private final int senha;
 
-    public Conta(int numero, String titular, double saldo, int senha) {
-        this.numero = numero;
+    private static int geradorNumConta = 1;
+
+    public Conta(String titular, int senha) {
+        this.numConta = "00" + geradorNumConta++;
         this.titular = titular;
-        this.saldo = saldo;
+        this.saldo = saldo + 1000.00;
         this.senha = senha;
+
     }
 
-    public int getNumero() {
-        return numero;
+    public String getNumConta() {
+        return numConta;
     }
 
     public String getTitular() {
@@ -54,12 +57,12 @@ public class Conta {
     }
 
     public void mostrarDados() {
-        System.out.println("Conta: " + titular + " | Nº: " + numero + " | Saldo: R$ " + saldo + " | Senha: " + senha);
+        System.out.println("Conta: " + titular + " | Nº: " + numConta + " | Saldo: R$ " + saldo + " | Senha: " + senha);
     }
     public void mostrarDados2() {
         System.out.printf("%-5s  %-20s | %-3s  %-3s | %-6s  %-6.2f | %-6s  %-3d\n",
                 "Conta", titular,
-                "Nº: ", numero,
+                "Nº: ", numConta,
                 "Saldo:", saldo,
                 "Senha:", senha);
     }

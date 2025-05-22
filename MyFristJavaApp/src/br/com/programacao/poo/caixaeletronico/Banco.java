@@ -10,15 +10,15 @@ public class Banco {
         contas.add(conta);
     }
 
-    public Conta buscarPorNumero(int numero) {
+    public Conta buscarPorNumero(String numConta) {
         for (Conta conta : contas) {
-            if (conta.getNumero() == numero) return conta;
+            if (conta.getNumConta().equals(numConta)) return conta;
         }
         return null;
     }
 
-    public Conta autenticar(int numero, int senha) {
-        Conta conta = buscarPorNumero(numero);
+    public Conta autenticar(String numConta, int senha) {
+        Conta conta = buscarPorNumero(numConta);
         if (conta != null && conta.getSenha() == senha) return conta;
         return null;
     }
