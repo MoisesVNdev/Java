@@ -1,10 +1,10 @@
-package br.com.programacao.POO.parte1;
+package br.com.programacao.poo.caixaeletronico;
 
 public class Conta {
-    private int numero;
-    private String titular;
+    private final int numero;
+    private final String titular;
     private double saldo;
-    private int senha;
+    private final int senha;
 
     public Conta(int numero, String titular, double saldo, int senha) {
         this.numero = numero;
