@@ -57,7 +57,7 @@ public class Conta {
         System.out.println("Conta: " + titular + " | Nº: " + numero + " | Saldo: R$ " + saldo + " | Senha: " + senha);
     }
     public void mostrarDados2() {
-        System.out.printf("%-5s  %-10s | %-3s  %-3s | %-6s  %-6.2f | %-6s  %-3d\n",
+        System.out.printf("%-5s  %-20s | %-3s  %-3s | %-6s  %-6.2f | %-6s  %-3d\n",
                 "Conta", titular,
                 "Nº: ", numero,
                 "Saldo:", saldo,

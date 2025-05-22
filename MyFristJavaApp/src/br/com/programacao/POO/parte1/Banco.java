@@ -24,7 +24,7 @@ public class Banco {
     }
 
     public void listarContas() {
-        System.out.println("\n📋 Contas cadastradas:");
+        System.out.println("\n Contas cadastradas:");
         for (Conta conta : contas) {
             conta.mostrarDados2();
         }
