@@ -1,10 +1,10 @@
-package br.com.programacao.POO.parte1;
+package br.com.programacao.poo.caixaeletronico;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Banco {
-    private List<Conta> contas = new ArrayList<>();
+    private final List<Conta> contas = new ArrayList<>();
 
     public void adicionarConta(Conta conta) {
         contas.add(conta);
