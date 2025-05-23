@@ -1,7 +1,7 @@
 package br.com.programacao.poo.caixaeletronico;
 
 public class App {
-    public static void main(String[] args) {
+    public static void startCaixa() {
         Banco banco = new Banco();
 
         // Contas de teste

@@ -43,7 +43,7 @@ public class Main {
                     RadarDeMulta.menu();
                     break;
                 case 7:
-                    App.main(args);
+                    App.startCaixa();
                     break;
                 case 8:
                     break;
