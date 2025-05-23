@@ -41,7 +41,7 @@ public class CaixaEletronico {
 
         Conta novaConta = new Conta(titular,senha);
         banco.adicionarConta(novaConta);
-        System.out.println("✅ Conta criada com sucesso!");
+        System.out.println("Conta criada com sucesso!");
         System.out.println("Número da nova conta: "+ novaConta.getNumConta()) ;
     }
     private void acessarConta() {
