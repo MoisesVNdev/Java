@@ -7,5 +7,10 @@
         <option value="FILE:src/Main.java" />
       </list>
     </option>
+    <option name="moduleMapping">
+      <map>
+        <entry key="MyFirstJavaApp" value="MyFristJavaApp" />
+      </map>
+    </option>
   </component>
 </project>
