@@ -15,7 +15,6 @@ public class Conta {
         this.senha = senha;
 
     }
-
     public String getNumConta() {
         return numConta;
     }
@@ -57,16 +56,10 @@ public class Conta {
     }
 
     public void mostrarDados() {
-        System.out.println("Conta: " + titular + " | Nº: " + numConta + " | Saldo: R$ " + saldo + " | Senha: " + senha);
-    }
-    public void mostrarDados2() {
         System.out.printf("%-5s  %-20s | %-3s  %-3s | %-6s  %-6.2f | %-6s  %-3d\n",
                 "Conta", titular,
                 "Nº: ", numConta,
                 "Saldo:", saldo,
                 "Senha:", senha);
     }
-
-
-
 }
