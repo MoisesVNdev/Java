@@ -6,7 +6,11 @@ public class Conta {
     private double saldo;
     private final int senha;
 
-    private static int geradorNumConta = 1;
+    private static int geradorNumConta;
+
+    static {
+        geradorNumConta = 1;
+    }
 
     public Conta(String titular, int senha) {
         this.numConta = "00" + geradorNumConta++;
